@@ -218,6 +218,53 @@ body {
     gap: 1rem;
 }
 
+/* Mis Reservas */
+.mis-reservas {
+    max-width: 600px;
+    margin: 3rem auto 0;
+}
+
+.mis-reservas h3 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.reserva-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.reserva-item strong {
+    color: var(--white);
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-eliminar:hover {
+    background: #c0392b;
+}
+
+.no-reservas {
+    text-align: center;
+    color: var(--gray);
+}
+
 /* Contact Grid */
 .contact-grid {
     display: grid;
