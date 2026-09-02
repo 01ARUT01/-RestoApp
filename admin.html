@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>Sistema de Reservas · Restaurante</title>
+  <!-- Font & icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2><i class="fas fa-utensils"></i> RestoApp</h2>
+    </div>
+    <div class="sidebar-menu" id="menuContainer">
+      <!-- items dinámicos por rol -->
+    </div>
+    <div class="sidebar-footer">
+      <div class="user-badge"><i class="fas fa-user-circle"></i> <span id="userNameDisplay">admin</span></div>
+      <button class="logout-btn" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</button>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <div class="main-content">
+    <div class="topbar">
+      <span class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></span>
+      <h3 id="viewTitle">Panel</h3>
+      <span class="role-badge" id="roleBadge">Administrador</span>
+    </div>
+    <div class="page-content" id="pageContent">
+      <!-- vistas se inyectan desde js -->
+    </div>
+  </div>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalContent">
+      <button class="close-modal" id="modalCloseBtn">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>
